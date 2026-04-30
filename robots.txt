@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lifeline.housinggrantsfinder.com/sitemap.xml
