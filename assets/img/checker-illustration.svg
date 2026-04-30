@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="380" viewBox="0 0 520 380" role="img" aria-label="Checklist illustration">
+<rect x="24" y="26" width="472" height="328" rx="34" fill="#eef6ff"/>
+<rect x="86" y="62" width="260" height="256" rx="28" fill="#fff" stroke="#d9e5f3" stroke-width="4"/>
+<path d="M127 124h174M127 174h148M127 224h188" stroke="#165ec7" stroke-width="14" stroke-linecap="round"/>
+<circle cx="394" cy="122" r="40" fill="#147a5b"/>
+<path d="M374 123l13 13 29-36" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="394" cy="224" r="40" fill="#0b8fcc"/>
+<path d="M376 224h36M394 206v36" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+</svg>

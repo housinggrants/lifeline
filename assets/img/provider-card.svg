@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Provider card icon">
+<rect width="160" height="160" rx="34" fill="#eef6ff"/>
+<rect x="52" y="22" width="56" height="116" rx="18" fill="#0b2447"/>
+<rect x="60" y="42" width="40" height="68" rx="8" fill="#fff"/>
+<circle cx="80" cy="122" r="6" fill="#fff"/>
+<path d="M66 72h28M66 88h18" stroke="#165ec7" stroke-width="6" stroke-linecap="round"/>
+<circle cx="112" cy="48" r="22" fill="#147a5b"/>
+<path d="M103 48l7 7 14-17" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

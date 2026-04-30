@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"><rect width="120" height="120" rx="30" fill="#16a34a"/><path d="M38 24h44a10 10 0 0 1 10 10v52a10 10 0 0 1-10 10H38a10 10 0 0 1-10-10V34a10 10 0 0 1 10-10Z" fill="white" opacity=".96"/><path d="M43 40h34M43 55h28M43 70h20" stroke="#16a34a" stroke-width="8" stroke-linecap="round"/><circle cx="78" cy="77" r="15" fill="#0f172a"/><path d="m71 78 5 5 10-13" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Lifeline Eligibility Guide logo">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#165ec7"/><stop offset="1" stop-color="#0b8fcc"/></linearGradient></defs>
+<rect width="160" height="160" rx="38" fill="url(#g)"/>
+<path d="M46 40h68c7 0 12 5 12 12v56c0 7-5 12-12 12H46c-7 0-12-5-12-12V52c0-7 5-12 12-12z" fill="#fff" opacity=".96"/>
+<path d="M55 62h50M55 80h34M55 98h22" stroke="#165ec7" stroke-width="8" stroke-linecap="round"/>
+<circle cx="111" cy="99" r="16" fill="#147a5b"/>
+<path d="M103 99l6 6 12-14" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
