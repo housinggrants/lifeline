@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="380" viewBox="0 0 520 380" role="img" aria-label="Checklist illustration">
-<rect x="24" y="26" width="472" height="328" rx="34" fill="#eef6ff"/>
-<rect x="86" y="62" width="260" height="256" rx="28" fill="#fff" stroke="#d9e5f3" stroke-width="4"/>
-<path d="M127 124h174M127 174h148M127 224h188" stroke="#165ec7" stroke-width="14" stroke-linecap="round"/>
-<circle cx="394" cy="122" r="40" fill="#147a5b"/>
-<path d="M374 123l13 13 29-36" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="394" cy="224" r="40" fill="#0b8fcc"/>
-<path d="M376 224h36M394 206v36" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 420"><rect width="540" height="420" rx="36" fill="#f6fbff"/><rect x="52" y="58" width="436" height="304" rx="30" fill="#fff" stroke="#d8e6f2" stroke-width="6"/><circle cx="122" cy="132" r="28" fill="#d9f4ec"/><path d="m108 132 10 10 22-25" stroke="#0f9a71" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="171" y="108" width="238" height="18" rx="9" fill="#1460c8"/><rect x="171" y="142" width="188" height="14" rx="7" fill="#cfe0f4"/><circle cx="122" cy="220" r="28" fill="#e8f1ff"/><path d="M108 220h28" stroke="#1460c8" stroke-width="8" stroke-linecap="round"/><rect x="171" y="196" width="214" height="18" rx="9" fill="#0f9a71"/><rect x="171" y="230" width="218" height="14" rx="7" fill="#cfe0f4"/><circle cx="122" cy="308" r="28" fill="#fff3ef"/><path d="M122 294v22" stroke="#b35d13" stroke-width="8" stroke-linecap="round"/><rect x="171" y="284" width="246" height="18" rx="9" fill="#0b2447"/><rect x="171" y="318" width="164" height="14" rx="7" fill="#cfe0f4"/></svg>
