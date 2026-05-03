@@ -1,0 +1,19 @@
+Ad.plus Money Mode changes
+
+1. Replaced the old ad loader in assets/js/app.js with a single GPT loader.
+2. Existing display placeholders now load through one reliable GPT command queue.
+3. Added Interstitial on normal pages.
+4. Added Premium Bottom Anchor on normal pages.
+5. Added desktop side rails on wide desktop screens.
+6. Added lazy loading for display slots to improve viewability.
+7. Added 30-second refresh only for sticky/side-rail out-of-page units.
+8. Fixed InPage Video loading using the Ad.plus player pattern.
+9. Added automatic extra in-content ad placeholders on money pages when the page has fewer than the target slots.
+10. Kept trust/legal pages light: no extra in-content auto ads on About, Contact, Privacy, Terms, Disclaimer, Editorial Policy.
+11. Updated CSS/JS cache-busting query strings to moneyfix2.
+12. Added ad preconnect hints to normal HTML pages.
+
+Deploy notes:
+- Upload the whole folder/zip to the approved lifeline.housinggrantsfinder.com site only.
+- Purge Cloudflare cache after deployment.
+- Check one article page, one provider page, result page, and homepage in incognito..

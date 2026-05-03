@@ -1,0 +1,18 @@
+Ad.plus full-site money mode update
+
+Changes in this build:
+- Homepage monetization enabled.
+- Trust/legal pages now also receive ad stack instead of being skipped.
+- Interstitial remains active sitewide except bot verification files.
+- Premium bottom anchor remains active sitewide.
+- Desktop side rails remain active sitewide on large screens.
+- Auto in-content display ad injection increased to 8 slots where page structure supports it.
+- Existing manual display and video slots preserved.
+- GPT loader kept single-instance to avoid duplicate Google Publisher Tag conflicts.
+- Ad slots still avoid direct insertion inside sticky CTA cards to reduce accidental-click risk.
+
+Deploy notes:
+1. Replace the current Cloudflare Pages/static site files with this ZIP.
+2. Purge Cloudflare cache.
+3. Test homepage plus 2 internal pages in incognito.
+4. Watch Ad.plus reports for 24 to 72 hours, then compare 7-day page RPM/eCPM.
