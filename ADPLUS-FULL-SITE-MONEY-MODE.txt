@@ -1,18 +1,26 @@
-Ad.plus full-site money mode update
+Ad.plus full-site revamp summary, 2026-05-23
 
-Changes in this build:
-- Homepage monetization enabled.
-- Trust/legal pages now also receive ad stack instead of being skipped.
-- Interstitial remains active sitewide except bot verification files.
-- Premium bottom anchor remains active sitewide.
-- Desktop side rails remain active sitewide on large screens.
-- Auto in-content display ad injection increased to 8 slots where page structure supports it.
-- Existing manual display and video slots preserved.
-- GPT loader kept single-instance to avoid duplicate Google Publisher Tag conflicts.
-- Ad slots still avoid direct insertion inside sticky CTA cards to reduce accidental-click risk.
+This build is optimized for stronger ad visibility, safer UX, better internal link flow, and fresher site design.
 
-Deploy notes:
-1. Replace the current Cloudflare Pages/static site files with this ZIP.
-2. Purge Cloudflare cache.
-3. Test homepage plus 2 internal pages in incognito.
-4. Watch Ad.plus reports for 24 to 72 hours, then compare 7-day page RPM/eCPM.
+Ad stack:
+- Interstitial remains active on normal HTML pages.
+- Bottom anchor remains active.
+- Desktop side rails remain active on large screens.
+- In-content display slots and auto injected slots remain active.
+- InPage Video remains active, one video unit per page where a video reserve exists.
+- No-fill display ad wrappers now collapse to avoid empty ad boxes.
+- GPT is loaded once through app.js.
+- Refresh remains limited to out-of-page sticky and side rail units.
+
+SEO and UX:
+- Added /free-samsung-phone/ for the high-intent Samsung Android device path.
+- Added high-intent cards on the homepage.
+- Added a keyword-led intent table on /compare-options/.
+- Strengthened footer and internal links to all money pages.
+- Added official verification source links where pages lacked external trust links.
+- Updated stylesheet for a cleaner 2026 design refresh.
+
+Safety notes:
+- No page promises a guaranteed iPhone, Samsung phone, tablet, or approval.
+- Device wording stays conditional on eligibility, state, provider, inventory, and terms.
+- Official source boxes point users to FCC, LifelineSupport.org, USAC National Verifier, and the USAC ACP notice.

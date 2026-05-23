@@ -1,0 +1,23 @@
+Lifeline site revamp notes, 2026-05-23
+
+Keyword data used from uploaded Ahrefs CSV:
+- free government phone: volume 50000, CPC 0.80, KD 56, traffic potential 82000
+- free phone: volume 43000, CPC 1.30, KD 67, traffic potential 81000
+- lifeline: volume 40000, CPC 0.80, KD 76, traffic potential 95000
+- free iphone: volume 19000, CPC 3.50, KD 18, traffic potential 21000
+- free tablet: volume 8100, CPC 0.60, KD 14, traffic potential 6500
+- free government tablet: volume 7300, CPC 0.40, KD 0, traffic potential 5500
+- free ipad: volume 1700, CPC 1.30, KD 0, traffic potential 600
+- free phone with ebt: volume 600, CPC 1.00, KD 41, traffic potential 71000
+- free samsung phone: volume 250, CPC 2.00, KD 3, traffic potential 350
+
+Implemented changes:
+- Added /free-samsung-phone/ to target the high-intent Android/Samsung device path safely.
+- Added homepage high-intent path cards for free government phone, free iPhone, free tablet, and free Samsung phone.
+- Added keyword-led navigation map to /compare-options/.
+- Added official source boxes to homepage, comparison page, result page, and states page.
+- Added stronger internal link blocks on pages that lacked them and added the Samsung path to existing internal link blocks.
+- Added Samsung Android path to the footer eligibility column sitewide.
+- Updated CSS with a newer card, hero, button, and ad placeholder design.
+- Updated Ad.plus loader to collapse no-fill ad wrappers, prevent visible blank ad boxes, keep one GPT loader, set lazy loading, and keep refresh limited to out-of-page sticky/rail units.
+- Kept external official links before the final CTA area where possible.

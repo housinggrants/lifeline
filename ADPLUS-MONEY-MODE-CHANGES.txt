@@ -1,19 +1,21 @@
-Ad.plus Money Mode changes
+Ad.plus SEO revenue-safe revamp, 2026-05-23
 
-1. Replaced the old ad loader in assets/js/app.js with a single GPT loader.
-2. Existing display placeholders now load through one reliable GPT command queue.
-3. Added Interstitial on normal pages.
-4. Added Premium Bottom Anchor on normal pages.
-5. Added desktop side rails on wide desktop screens.
-6. Added lazy loading for display slots to improve viewability.
-7. Added 30-second refresh only for sticky/side-rail out-of-page units.
-8. Fixed InPage Video loading using the Ad.plus player pattern.
-9. Added automatic extra in-content ad placeholders on money pages when the page has fewer than the target slots.
-10. Kept trust/legal pages light: no extra in-content auto ads on About, Contact, Privacy, Terms, Disclaimer, Editorial Policy.
-11. Updated CSS/JS cache-busting query strings to moneyfix2.
-12. Added ad preconnect hints to normal HTML pages.
+1. Kept one Google Publisher Tag loader in assets/js/app.js to avoid duplicate GPT conflicts.
+2. Kept Interstitial, Premium Bottom Anchor, desktop side rails, display units, pause 300x250, and InPage Video support.
+3. Added no-fill handling: if GPT returns an empty display slot, the wrapper is collapsed so visitors do not see blank ad boxes.
+4. Kept lazy loading enabled with earlier fetch/render margins to improve viewability without forcing ads inside risky CTA areas.
+5. Kept 30-second refresh only for sticky anchor and desktop side rail out-of-page units, matching the supplied Ad.plus pattern.
+6. Added ad status markers for loading, filled, and empty states so CSS can handle placeholders cleanly.
+7. Limited trust/legal pages to lighter auto ad insertion while keeping main money pages stronger.
+8. Added cache busting: style.css?v=revamp5 and app.js?v=revamp5.
+9. Added a new high-intent page: /free-samsung-phone/.
+10. Added homepage high-intent path cards and /compare-options/ keyword navigation map.
+11. Added stronger internal linking to high-value pages, including free phone eligibility, EBT phone options, free iPhone, free Samsung phone, free tablet, documents, and provider comparison.
+12. Added official source boxes on homepage, compare page, result page, and states page before the final CTA area.
+13. Updated visual design with a newer hero, cards, buttons, ad placeholder styling, and hover states.
 
 Deploy notes:
-- Upload the whole folder/zip to the approved lifeline.housinggrantsfinder.com site only.
+- Upload only to the approved Ad.plus site: lifeline.housinggrantsfinder.com.
 - Purge Cloudflare cache after deployment.
-- Check one article page, one provider page, result page, and homepage in incognito..
+- Test homepage, /compare-options/, /result/, /free-samsung-phone/, and one provider page in incognito.
+- Watch Ad.plus reports for 24 to 72 hours, then compare 7-day RPM/eCPM by page.
