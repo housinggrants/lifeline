@@ -7,7 +7,7 @@ Ad.plus SEO revenue-safe revamp, 2026-05-23
 5. Kept 30-second refresh only for sticky anchor and desktop side rail out-of-page units, matching the supplied Ad.plus pattern.
 6. Added ad status markers for loading, filled, and empty states so CSS can handle placeholders cleanly.
 7. Limited trust/legal pages to lighter auto ad insertion while keeping main money pages stronger.
-8. Added cache busting: style.css?v=revamp5 and app.js?v=revamp5.
+8. Added cache busting: style.css?v=revamp6 and app.js?v=revamp6.
 9. Added a new high-intent page: /free-samsung-phone/.
 10. Added homepage high-intent path cards and /compare-options/ keyword navigation map.
 11. Added stronger internal linking to high-value pages, including free phone eligibility, EBT phone options, free iPhone, free Samsung phone, free tablet, documents, and provider comparison.

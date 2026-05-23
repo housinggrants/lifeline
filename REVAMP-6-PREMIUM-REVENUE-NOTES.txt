@@ -1,0 +1,18 @@
+Revamp 6 Premium Revenue Update
+
+What changed:
+1. Added a more premium homepage hero with a phone-style eligibility preview.
+2. Replaced the first post-intro 300x250 homepage slot with a responsive 970x250/728x90/320x100 premium slot.
+3. Activated controlled Pause Banner placement through the shared ad system. It appears once per page session and uses the Ad.Plus Pause 300x250 unit.
+4. Added high-intent internal pages:
+   - /lifeline-phone-plans/
+   - /free-ipad-with-ebt/
+5. Added page-level ad targeting signals: intent_bucket, content_vertical, page_path, and ad_stack.
+6. Added stronger internal linking toward iPhone, Samsung, EBT, tablet, iPad, documents, and plan comparison pages.
+7. Added premium CSS layer for a newer, less basic look.
+8. Kept claims cautious: no guaranteed free iPhone, iPad, Samsung device, tablet, or approval claim.
+9. Kept empty ad collapse enabled so no-fill slots should not leave ugly blank boxes.
+10. Kept interstitial, bottom anchor, and desktop side rails active because Ad.Plus identified interstitial and sticky anchor as top-performing formats.
+
+Upload note:
+Use this only on the approved HousingGrantsFinder / lifeline approved property. Do not copy these ad codes to unapproved domains.

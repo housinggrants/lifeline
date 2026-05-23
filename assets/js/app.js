@@ -21,6 +21,7 @@
   function slug(){return (location.pathname||"/").replace(/^\/+|\/+$/g,"") || "home"}
   function isTrustPage(){return /\/(about|contact|privacy-policy|terms|disclaimer|editorial-policy)\/?$/i.test(location.pathname||'')}
   function isBotPage(){return /google[a-z0-9]+\.html$/i.test(location.pathname||"")}
+  function inferIntent(){var p=(location.pathname||"/").toLowerCase();if(p.indexOf("iphone")>-1)return "iphone";if(p.indexOf("samsung")>-1)return "samsung_android";if(p.indexOf("tablet")>-1||p.indexOf("ipad")>-1)return "tablet_device";if(p.indexOf("ebt")>-1||p.indexOf("snap")>-1||p.indexOf("medicaid")>-1)return "benefit_eligibility";if(p.indexOf("plans")>-1||p.indexOf("provider")>-1)return "phone_plan_comparison";return "lifeline_general"}
 
   function parseSizes(v){
     if(!v)return [[300,250]];
@@ -54,6 +55,25 @@
   function hasAdNear(el){
     var prev=el&&el.previousElementSibling, next=el&&el.nextElementSibling;
     return (prev&&prev.classList&&prev.classList.contains("ad-wrap")) || (next&&next.classList&&next.classList.contains("ad-wrap"));
+  }
+
+
+  function injectPauseAd(){
+    if(isTrustPage() || isBotPage())return;
+    if(qs("[data-ad-unit='"+ADPLUS.pause300+"']"))return;
+    var main=qs("#main")||qs("main");
+    if(!main)return;
+    var target=null;
+    var sections=qsa(".content-section",main);
+    for(var i=0;i<sections.length;i++){
+      var p=qsa("p",sections[i]);
+      if(p.length>=1 && !sections[i].classList.contains("high-value-next")){target=p[0];break;}
+    }
+    if(!target)return;
+    var key="hgf_pause_seen_"+slug();
+    try{ if(sessionStorage.getItem(key)==="1")return; sessionStorage.setItem(key,"1"); }catch(e){}
+    var id="adplus-pause-"+slug().replace(/[^a-z0-9]+/gi,"-")+"-1";
+    target.insertAdjacentElement("afterend",makeAd(id,ADPLUS.pause300,"300x250","ad-rectangle pause-banner"));
   }
 
   function injectAutoAds(){
@@ -114,6 +134,7 @@
 
   function defineMoneyAds(){
     if(isBotPage())return;
+    injectPauseAd();
     injectAutoAds();
     loadGPT();
     window.googletag=window.googletag||{cmd:[]};
@@ -128,7 +149,7 @@
         if(!unit || !sizes.length)return;
         var slot=googletag.defineSlot(unit,sizes.length===1?sizes[0]:sizes,el.id);
         if(!slot)return;
-        if(slot.setTargeting){slot.setTargeting("page_path", slug()).setTargeting("ad_stack", "safe_money_revamp5");}
+        if(slot.setTargeting){slot.setTargeting("page_path", slug()).setTargeting("ad_stack", "safe_money_revamp6").setTargeting("intent_bucket", inferIntent()).setTargeting("content_vertical", "lifeline_telecom");}
         slot.addService(googletag.pubads());
         setAdStatus(el.id,"loading");
         if(unit.indexOf("Pause-300x250") !== -1 && slot.setConfig){
@@ -164,6 +185,7 @@
           if(id){setAdStatus(id,event.isEmpty?"empty":"filled");}
         });
       }
+      if(googletag.pubads().setCentering){googletag.pubads().setCentering(true);}
       googletag.pubads().enableSingleRequest();
       if(googletag.pubads().enableLazyLoad){
         googletag.pubads().enableLazyLoad({fetchMarginPercent:220,renderMarginPercent:120,mobileScaling:2});
