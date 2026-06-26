@@ -245,6 +245,8 @@ p{margin:0 0 14px}
 .ad-rectangle .ad-slot{width:300px;min-height:250px}
 .wide-336 .ad-slot{width:336px;max-width:100%;min-height:280px}
 .ad-wide .ad-slot{width:min(970px,100%);min-height:210px}
+.ad-slim .ad-slot{min-height:100px}
+.title-ad-slot{margin-top:10px;margin-bottom:24px}
 .premium-top-ad .ad-slot,.max10-top-ad .ad-slot{min-height:250px}
 .ad-video .video-reserve{width:min(760px,100%);min-height:320px;font-weight:850}
 .ad-mobile-banner .ad-slot{width:min(320px,100%);min-height:100px}
@@ -405,6 +407,7 @@ p{margin:0 0 14px}
   .checker-shell{padding:20px 14px}
   .checker-card{min-height:auto}
   .ad-wrap{margin:28px auto;padding:0 12px}
+  .title-ad-slot{margin:12px auto 18px;padding:0 10px}
   .ad-wide .ad-slot,.premium-top-ad .ad-slot,.max10-top-ad .ad-slot{min-height:100px}
   .ad-rectangle .ad-slot,.wide-336 .ad-slot{width:min(336px,100%);min-height:250px}
   .ad-video .video-reserve{min-height:240px}
